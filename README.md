@@ -1,12 +1,11 @@
-# PoppacalypsePalindrome
+# Palindrome detector
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/poppacalypse_palindrome`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+`poppacalypse_palindrome` is a sample Ruby gem created as part of my software development learning journey, specifically [*Learn Enough Ruby to Be Dangerous*](https://www.learnenough.com/ruby-tutorial).
 
 ## Installation
 
-Add this line to your application's Gemfile:
+To install `poppacalypse_palindrome`, add this line to your application's `Gemfile`:
+
 
 ```ruby
 gem 'poppacalypse_palindrome'
@@ -22,7 +21,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`poppacalypse_palindrome` adds a `palindrome?` method to the `String` and `Integer` classes, and can be used as follows:
+
+```
+$ irb
+>> require 'poppacalypse_palindrome'
+>> "honey badger".palindrome?
+=> false
+>> "deified".palindrome?
+=> true
+>> "Able was I, ere I saw Elba.".palindrome?
+=> true
+>> phrase = "Madam, I'm Adam."
+>> phrase.palindrome?
+=> true
+>> 12321.palindrome?
+=> true
+```
 
 ## Development
 
@@ -32,5 +47,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/poppacalypse_palindrome.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/poppacalypse/poppacalypse_palindrome.
