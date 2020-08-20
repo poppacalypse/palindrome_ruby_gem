@@ -27,6 +27,7 @@ class PoppacalypsePalindromeTest < Minitest::Test
   end
 
   # ============ Ch 8.5 Refactor: Method 3 ==================
+
   # This can be removed as we are no longer using loops
   # def test_letters
   #   assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
