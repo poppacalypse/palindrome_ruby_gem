@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["poppacalypse@gmail.com"]
 
   spec.summary       = %q{Palindrome detector}
-  spec.description   = %q{Learn Enough Ruby palindrome detector}
+  spec.description   = %q{Adds 'palindrome?' method to String class}
   spec.homepage      = "https://github.com/poppacalypse/palindrome_ruby_gem"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
