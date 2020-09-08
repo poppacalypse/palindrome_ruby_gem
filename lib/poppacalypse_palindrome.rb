@@ -7,7 +7,11 @@ module PoppacalypsePalindrome
 
     # Returns true for palindrome, false otherwise
     def palindrome?
+      if processed_content.empty?
+        false
+      else
       processed_content == processed_content.reverse
+      end
     end
 
     private
@@ -52,7 +56,8 @@ end
 #   #   the_letters.join
 #   # end
 #
-#   # =============== Ch 8.5 Refactor: Method 1 ===================
+#  # =============== Ch 8.5 Refactor: Method 1 ===================
+#  # Eliminate duplication by binding to var, and simplify regex
 #
 #   # def letters
 #   #   the_letters = []

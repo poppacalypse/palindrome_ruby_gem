@@ -14,6 +14,10 @@ class PoppacalypsePalindromeTest < Minitest::Test
     refute "apple".palindrome?
   end
 
+  def test_empty_string_non_palindrome
+    refute "".palindrome?
+  end
+
   def test_palindrome
     assert "racecar".palindrome?
   end
